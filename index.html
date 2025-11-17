@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lyon College Hub — Home</title>
+
+  <!-- Bootstrap 5 CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS (must be after Bootstrap) -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- accessible description -->
+  <meta name="description" content="Lyon College Hub — events, dining, and campus resources." />
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Lyon College Hub</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="dining.html">Dining</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="container mt-4" id="maincontent" tabindex="-1">
+    <!-- Hero -->
+    <section class="hero p-4 rounded-3 mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-7">
+          <h1>Welcome to Lyon College Hub</h1>
+          <p class="lead">Events, dining, maps, and campus resources — all in one place.</p>
+          <p>
+            <a class="btn btn-primary me-2" href="events.html" id="cta-events">See Events</a>
+            <a class="btn btn-outline-primary" href="dining.html" id="cta-dining">Dining</a>
+          </p>
+        </div>
+        <div class="col-md-5">
+          <!-- image placeholder -->
+          <img src="images/placeholder.png" alt="Campus placeholder image" class="img-fluid rounded">
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature blocks -->
+    <section aria-labelledby="features-title">
+      <h2 id="features-title">Quick Links</h2>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card feature-card" role="button" tabindex="0" onclick="location.href='events.html'">
+            <div class="card-body">
+              <h3 class="card-title">Events</h3>
+              <p class="card-text">Browse upcoming campus events and RSVP.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card feature-card" role="button" tabindex="0" onclick="location.href='dining.html'">
+            <div class="card-body">
+              <h3 class="card-title">Dining</h3>
+              <p class="card-text">See today's menus and dining hall hours.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card feature-card" role="button" tabindex="0" onclick="alert('Map page coming soon!')">
+            <div class="card-body">
+              <h3 class="card-title">Map</h3>
+              <p class="card-text">Find buildings and get directions around campus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- API placeholder / News -->
+    <section class="mt-4" aria-labelledby="news-title">
+      <h2 id="news-title">Campus Highlights (API Feed)</h2>
+      <div id="news-placeholder" class="list-group">
+        <!-- JS will inject feed items here; placeholder shown when JS not loaded -->
+        <div class="list-group-item">Loading campus highlights...</div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-light mt-5 py-3" id="contact">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <strong>Lyon College Hub</strong><br />
+        <small>Contact: hub@lyon.edu</small>
+      </div>
+      <div>
+        <a href="#" class="me-2">Privacy</a>
+        <a href="#">Accessibility</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS + Popper (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
