@@ -1,0 +1,53 @@
+/* style.css - basic custom styles for Lyon College Hub */
+/* Comments explain purpose of each section for the assignment */
+
+:root {
+  --brand: #0d6efd;
+  --muted: #6c757d;
+  --bg: #ffffff;
+}
+
+/* Global layout */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: #212529;
+  line-height: 1.5;
+}
+
+/* Header spacing */
+.site-header .navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(0deg, rgba(13,110,253,0.05), rgba(13,110,253,0.02));
+  border: 1px solid rgba(13,110,253,0.05);
+}
+
+/* Feature cards */
+.feature-card {
+  cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.feature-card:focus,
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  outline: none;
+}
+
+/* Accessibility focus for interactive cards */
+.feature-card:focus {
+  box-shadow: 0 0 0 4px rgba(13,110,253,0.12);
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #e9ecef;
+}
+
+/* Small utility */
+.lead { color: var(--muted); }
